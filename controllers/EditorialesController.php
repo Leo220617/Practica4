@@ -40,7 +40,7 @@
       'founded'=>$founded,'genere'=>$genere
       ,'books__book_id'=>$books__book_id,'books__title'=>$books__title
       ];
-      DB::table('publisher')->create($item);
+      DB::table('publisher')->insert($item);
       return redirect('/editorial');
     }  
     
@@ -69,7 +69,7 @@
     }
     
     public function destroy($id) {  
-      DB::table('publisher')->destroy($id);
+      DB::table('publisher')->delete($id);
       return redirect('/editorial');
     }
   

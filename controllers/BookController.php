@@ -46,7 +46,7 @@
       ,'author_id'=>$author_id,'publisher'=>$publisher
       ,'publisher_id'=>$publisher_id];
 
-      DB::table('book')->create($item);
+      DB::table('book')->insert($item);
       return redirect('/book');
     }  
     
@@ -80,7 +80,7 @@
     
     public function destroy($id) {  
     
-      DB::table('book')->destroy($id);
+      DB::table('book')->delete($id);
       return redirect('/book');
     }
   }

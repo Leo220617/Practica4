@@ -40,7 +40,7 @@
      ,'books__book_id'=>$books__book_id,'books__title'=>$books__title
      ];
 
-     DB::table('author')->create($item);
+     DB::table('author')->insert($item);
      autores::create($item);
      return redirect('/author');
    }  
@@ -69,7 +69,7 @@
    }
    
    public function destroy($id) {  
-    DB::table('author')->destroy($id);
+    DB::table('author')->delete($id);
     return redirect('/author');
   }
   }

@@ -24,35 +24,35 @@
      <div class="row">
       <div class="six columns">
        <label for="nameInput">Title</label>
-       <input class="u-full-width" type="text" {{#show}} readonly {{/show}}
+       <input class="u-full-width" type="text" name="title" {{#show}} readonly {{/show}}
           id="title" value="{{title}}">
       </div>
       <div class="six columns">
        <label for="degreeInput">Edition</label>
-       <input class="u-full-width" type="text" {{#show}} readonly {{/show}}
+       <input class="u-full-width" type="text" name="edition" {{#show}} readonly {{/show}}
           id="edition" value="{{edition}}">
       </div>
      </div>
      <div class="row">
       <div class="six columns">
        <label for="emailInput">Copyright</label>
-       <input class="u-full-width" type="text" {{#show}} readonly {{/show}}
+       <input class="u-full-width" type="text" name="copyright" {{#show}} readonly {{/show}}
           id="copyright" value="{{copyright}}">
       </div>
       <div class="six columns">
        <label for="language">Language</label>
-       <input class="u-full-width" type="text" {{#show}} readonly {{/show}}
+       <input class="u-full-width" type="text" name="language" {{#show}} readonly {{/show}}
          id="language" value="{{language}}">
       </div>
       <div class="row">
          <div class="six columns">
           <label for="pages">Pages</label>
-          <input class="u-full-width" type="text" {{#show}} readonly {{/show}}
+          <input class="u-full-width" type="text" name="pages {{#show}} readonly {{/show}}
              id="pages" value="{{pages}}">
          </div>
          <div class="six columns">
           <label for="author">Author</label>
-          <input class="u-full-width" type="text" {{#show}} readonly {{/show}}
+          <input class="u-full-width" type="text" name="author" {{#show}} readonly {{/show}}
             id="author" value="{{author}}">
          </div>
       <a class="button button-primary" href="/book">Back</a>
